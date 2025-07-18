@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logado - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        background-color: #f0f1f2;
+      }
+
+      .card-option {
+        background-color: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 100%;
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      .card-option:hover {
+        border-color: #0064af;
+      }
+
+      .comunicado-card {
+        background-color: white;
+        border-left: 4px solid #002b55;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      footer {
+        background-color: #e8e5dd;
+        padding: 2rem 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      .app-icons img {
+        height: 40px;
+        margin: 0 0.5rem;
+      }
+
+      .accordion .accordion-item {
+        margin-bottom: 1rem; /* espaçamento entre os itens */
+        border: 1px solid #ced4da; /* borda leve */
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: #f8f9fa; /* cor de fundo do item aberto */
+        box-shadow: none;
+      }
+
+      .accordion-button {
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      .accordion-item.border-start-important {
+        border-left: 5px solid #003263 !important;
+      }
+
+      .accordion-item.border-start-warning {
+        border-left: 5px solid #003263 !important;
+      }
+
+      .accordion-item.border-start-info {
+        border-left: 4px solid #003263 !important;
+      }
+
+      .accordion-button::after {
+        display: none; /* remove a seta padrão, que empurra o texto */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra superior -->
+    <!-- TOPO UNIFICADO -->
+    <div class="text-white" style="background-color: #003263">
+      <!-- Linha superior -->
+      <div
+        class="d-flex justify-content-between align-items-center px-4"
+        style="height: 64px"
+      >
+        <img src="./images/logo-tim.png" alt="Logo TIM" style="height: 15px" />
+        <div class="d-flex align-items-center gap-3">
+          <span style="font-size: 1rem">
+            Tours <span class="text-danger">●</span>
+          </span>
+          <div
+            class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center"
+            style="width: 32px; height: 32px"
+          >
+            <strong>HM</strong>
+          </div>
+          <span style="font-size: 0.9rem">HERCULES DA SILVA MONTEIRO</span>
+        </div>
+      </div>
+
+      <!-- Saudação e campo de busca -->
+      <div class="container ">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <!-- Coluna da esquerda -->
+          <div>
+            <h4 class="mb-2 text-white">Olá Hercules!</h4>
+            <div class="input-group" style="width: 797px; height: 36px">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Busca rápida dos informativos do HDC"
+                style="
+                  height: 36px;
+                  border-radius: 4px 0 0 4px;
+                  border: 1px solid #ced4da;
+                "
+              />
+              <span
+                class="input-group-text"
+                style="
+                  height: 36px;
+                  border-radius: 0 4px 4px 0;
+                  border: 1px solid #ced4da;
+                "
+              >
+                <i class="bi bi-search"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Coluna da direita (imagem alinhada) -->
+          <div>
+            <img
+              src="./images/hero-background.png"
+              alt="Fundo com pessoa"
+              style="width: 375px; height: 125px; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container py-5">
+      <div class="row">
+        <!-- Coluna da esquerda -->
+        <div class="col-lg-8">
+          <h5 class="mb-4">Solicitações</h5>
+          <div class="row g-3 mb-5">
+            <div class="col-md-4">
+              <div class="card-option">Consulta Chamado</div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-option">Consulta Linha</div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-option">Consulta Portabilidade</div>
+            </div>
+          </div>
+
+          <h5 class="mb-4">HDC</h5>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card-option">Informativos</div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-option">Meu Histórico de Atendimentos</div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-option">Consulta Portabilidade</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna da direita -->
+        <div class="col-lg-4">
+          <h5 class="mb-4">Comunicados</h5>
+
+          <div class="accordion" id="comunicadosAccordion">
+            <div class="accordion-item border-start-important">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed fw-bold d-flex justify-content-center align-items-center"
+                  style="color: #003263"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  ‼️ IMPORTANTE ‼️
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#comunicadosAccordion"
+              >
+                <div class="accordion-body">
+                  ATENÇÃO: o HDC não entra em contato com a Loja ou Parceiro
+                  para solicitar informações confidenciais (Senha e Token) ou
+                  pedir acesso remoto às máquinas! Informações como Senhas e
+                  Token Code nunca devem ser informadas por telefone ou
+                  compartilhadas com outros usuários. Caso receba algum
+                  acionamento suspeito, sinalize imediatamente o Executivo de
+                  Contas ou Coordenador para report junto ao time de Canal de
+                  Denúncias.
+                  <br />
+                  <a
+                    href="https://saas.riskmanager.modulo.com/PRI_134/public/portal"
+                    target="_blank"
+                    >Acesse o canal de denúncias</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-start-important">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold d-flex justify-content-center align-items-center"
+                  style="color: #003263"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  ‼️ REAGENDAMENTO DE BP - ICP0004198
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#comunicadosAccordion"
+              >
+                <div class="accordion-body">
+                  Detalhes sobre o reagendamento ainda não informados.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-start-info">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fw-bold d-flex justify-content-center align-items-center text-center w-100"
+                  style="color: #003263"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  📄 ICP0004177 | Antiga: ICP0004176 APP TIM Vendas: “Não foi
+                  possível realizar a operação...”
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#comunicadosAccordion"
+              >
+                <div class="accordion-body">
+                  A operação não pôde ser concluída devido a falha técnica.
+                  Favor tentar novamente mais tarde.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-start-warning">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed fw-bold d-flex justify-content-center align-items-center text-center w-100"
+                  style="color: #003263"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  ⚠️ ICP0004090 / INC1827089 - APP TIM Vendas: “Não foi possível
+                  capturar todos os dados...”
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#comunicadosAccordion"
+              >
+                <div class="accordion-body">
+                  A operação não pôde ser concluída por ausência de dados
+                  essenciais. Verifique os dados do cliente e tente novamente.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        Baixe agora mesmo o Aplicativo<br />Now Mobile para acessar o MarTIM
+      </p>
+      <div class="app-icons mt-2">
+        <img src="./images/google-play.png" alt="Google Play" />
+        <img src="./images/app-store.png" alt="App Store" />
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
