@@ -300,6 +300,52 @@ footer {
   color: white;
 }
 
+.comunicados-container {
+  background-color: #e60044;
+  color: white;
+}
+
+.comunicado-box {
+  padding: 1rem 2rem;
+  background-color: #e50046;
+  color: white;
+  margin-bottom: 1px;
+}
+
+.comunicado-titulo {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.comunicado-texto {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.comunicado-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-ocultar {
+  background-color: #003263;
+  color: white;
+  font-weight: 500;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+
+
+.btn-ocultar:hover {
+  background-color: #001f4d;
+}
+
 
 @font-face {
   font-family: 'TIM Sans';
