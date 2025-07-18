@@ -300,9 +300,6 @@ footer {
   color: white;
 }
 
-.card-option:hover img.card-icon {
-  filter: brightness(0) invert(1); /* deixa o ícone branco no hover */
-}
 
 @font-face {
   font-family: 'TIM Sans';
