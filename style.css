@@ -283,7 +283,7 @@ footer {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* ← ícone alinhado à esquerda */
+  align-items: flex-start;
   justify-content: center;
   gap: 0.5rem;
   text-align: left;
@@ -340,12 +340,9 @@ footer {
   text-transform: uppercase;
 }
 
-
-
 .btn-ocultar:hover {
   background-color: #001f4d;
 }
-
 
 @font-face {
   font-family: 'TIM Sans';
