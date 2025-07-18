@@ -31,28 +31,32 @@
       >
         <img src="./images/logo-tim.png" alt="Logo TIM" style="height: 15px" />
         <div class="d-flex align-items-center gap-3">
-          <span class="font-tours">
-            Tours <span class="text-danger">●</span>
-          </span>
+          <span class="font-tim font-tiny"
+            >Tours <span class="text-danger">●</span></span
+          >
           <div
             class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center"
             style="width: 32px; height: 32px"
           >
-            <strong class="font-iniciais">HM</strong>
+            <strong class="font-tim font-xs font-bold text-center">HM</strong>
           </div>
-          <span class="font-usuario">HERCULES DA SILVA MONTEIRO</span>
+          <span class="font-tim font-tiny font-bold"
+            >HERCULES DA SILVA MONTEIRO</span
+          >
         </div>
       </div>
 
       <!-- Saudação e campo de busca -->
-      <div class="container">
+      <div class="container-fluid px-3">
         <div
           class="d-flex flex-wrap align-items-center justify-content-between"
           style="gap: 1rem"
         >
           <!-- Coluna da esquerda -->
           <div style="flex: 1 1 auto; min-width: 300px">
-            <h4 class="mb-2 text-white font-ola">Olá Hercules!</h4>
+            <h4 class="mb-2 text-white font-tim font-section-title font-medium">
+              Olá Hercules!
+            </h4>
             <div
               class="input-group"
               style="width: 100%; max-width: 797px; height: 36px"
@@ -93,46 +97,42 @@
     </div>
 
     <!-- Conteúdo principal -->
-    <div class="container py-5 main-content">
+    <div class="container-fluid py-5 main-content px-3">
       <div class="row">
         <!-- Coluna da esquerda -->
         <div class="col-lg-8">
-          <h5 class="mb-4 font-solicitacoes">Solicitações</h5>
+          <h5 class="mb-4 font-tim font-section-title">Solicitações</h5>
           <div class="row g-3 mb-5">
             <div class="col-md-4">
-              <div class="card-option font-card-option">Consulta Chamado</div>
+              <div class="card-option font-tim font-card">Consulta Chamado</div>
             </div>
             <div class="col-md-4">
-              <div class="card-option font-card-option">Consulta Linha</div>
+              <div class="card-option font-card">Consulta Linha</div>
             </div>
             <div class="col-md-4">
-              <div class="card-option font-card-option">
-                Consulta Portabilidade
-              </div>
+              <div class="card-option font-card">Consulta Portabilidade</div>
             </div>
           </div>
 
           <h5 class="mb-4">HDC</h5>
           <div class="row g-3">
             <div class="col-md-4">
-              <div class="card-option font-card-option">Informativos</div>
+              <div class="card-option font-card">Informativos</div>
             </div>
             <div class="col-md-4">
-              <div class="card-option font-card-option">
+              <div class="card-option font-card">
                 Meu Histórico de Atendimentos
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card-option font-card-option">
-                Consulta Portabilidade
-              </div>
+              <div class="card-option font-card">Consulta Portabilidade</div>
             </div>
           </div>
         </div>
 
         <!-- Coluna da direita -->
         <div class="col-lg-4">
-          <h5 class="mb-4 font-comunicados">Comunicados</h5>
+          <h5 class="mb-4 font-section-title">Comunicados</h5>
 
           <div class="accordion" id="comunicadosAccordion">
             <div class="accordion-item border-start-important">
@@ -262,12 +262,14 @@
 
     <!-- Rodapé -->
     <footer>
-      <p class="font-footer">
-        Baixe agora mesmo o Aplicativo<br />Now Mobile para acessar o MarTIM
-      </p>
-      <div class="app-icons mt-2">
-        <img src="./images/google-play.png" alt="Google Play" />
-        <img src="./images/app-store.png" alt="App Store" />
+      <div class="container-fluid px-3 text-center">
+        <p class="font-tim font-footer font-medium">
+          Baixe agora mesmo o Aplicativo<br />Now Mobile para acessar o MarTIM
+        </p>
+        <div class="app-icons mt-2">
+          <img src="./images/google-play.png" alt="Google Play" />
+          <img src="./images/app-store.png" alt="App Store" />
+        </div>
       </div>
     </footer>
 
