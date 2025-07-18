@@ -16,79 +16,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
 
-    <style>
-      body {
-        background-color: #f0f1f2;
-      }
+    <link rel="stylesheet" href="style.css" />
 
-      .card-option {
-        background-color: white;
-        border-radius: 8px;
-        padding: 1.5rem;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        height: 100%;
-        border: 1px solid transparent;
-        transition: all 0.2s ease;
-      }
-
-      .card-option:hover {
-        border-color: #0064af;
-      }
-
-      .comunicado-card {
-        background-color: white;
-        border-left: 4px solid #002b55;
-        padding: 1rem;
-        margin-bottom: 1rem;
-      }
-
-      footer {
-        background-color: #e8e5dd;
-        padding: 2rem 1rem;
-        text-align: center;
-        font-size: 0.9rem;
-      }
-
-      .app-icons img {
-        height: 40px;
-        margin: 0 0.5rem;
-      }
-
-      .accordion .accordion-item {
-        margin-bottom: 1rem; /* espaçamento entre os itens */
-        border: 1px solid #ced4da; /* borda leve */
-        border-radius: 4px;
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      }
-
-      .accordion-button:not(.collapsed) {
-        background-color: #f8f9fa; /* cor de fundo do item aberto */
-        box-shadow: none;
-      }
-
-      .accordion-button {
-        font-size: 0.95rem;
-        font-weight: 500;
-      }
-
-      .accordion-item.border-start-important {
-        border-left: 5px solid #003263 !important;
-      }
-
-      .accordion-item.border-start-warning {
-        border-left: 5px solid #003263 !important;
-      }
-
-      .accordion-item.border-start-info {
-        border-left: 4px solid #003263 !important;
-      }
-
-      .accordion-button::after {
-        display: none; /* remove a seta padrão, que empurra o texto */
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <!-- Barra superior -->
@@ -101,16 +31,16 @@
       >
         <img src="./images/logo-tim.png" alt="Logo TIM" style="height: 15px" />
         <div class="d-flex align-items-center gap-3">
-          <span style="font-size: 1rem">
+          <span class="font-tours">
             Tours <span class="text-danger">●</span>
           </span>
           <div
             class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center"
             style="width: 32px; height: 32px"
           >
-            <strong>HM</strong>
+            <strong class="font-iniciais">HM</strong>
           </div>
-          <span style="font-size: 0.9rem">HERCULES DA SILVA MONTEIRO</span>
+          <span class="font-usuario">HERCULES DA SILVA MONTEIRO</span>
         </div>
       </div>
 
@@ -122,14 +52,14 @@
         >
           <!-- Coluna da esquerda -->
           <div style="flex: 1 1 auto; min-width: 300px">
-            <h4 class="mb-2 text-white">Olá Hercules!</h4>
+            <h4 class="mb-2 text-white font-ola">Olá Hercules!</h4>
             <div
               class="input-group"
               style="width: 100%; max-width: 797px; height: 36px"
             >
               <input
                 type="text"
-                class="form-control"
+                class="form-control custom-placeholder"
                 placeholder="Busca rápida dos informativos do HDC"
                 style="
                   height: 36px;
@@ -163,40 +93,46 @@
     </div>
 
     <!-- Conteúdo principal -->
-    <div class="container py-5">
+    <div class="container py-5 main-content">
       <div class="row">
         <!-- Coluna da esquerda -->
         <div class="col-lg-8">
-          <h5 class="mb-4">Solicitações</h5>
+          <h5 class="mb-4 font-solicitacoes">Solicitações</h5>
           <div class="row g-3 mb-5">
             <div class="col-md-4">
-              <div class="card-option">Consulta Chamado</div>
+              <div class="card-option font-card-option">Consulta Chamado</div>
             </div>
             <div class="col-md-4">
-              <div class="card-option">Consulta Linha</div>
+              <div class="card-option font-card-option">Consulta Linha</div>
             </div>
             <div class="col-md-4">
-              <div class="card-option">Consulta Portabilidade</div>
+              <div class="card-option font-card-option">
+                Consulta Portabilidade
+              </div>
             </div>
           </div>
 
           <h5 class="mb-4">HDC</h5>
           <div class="row g-3">
             <div class="col-md-4">
-              <div class="card-option">Informativos</div>
+              <div class="card-option font-card-option">Informativos</div>
             </div>
             <div class="col-md-4">
-              <div class="card-option">Meu Histórico de Atendimentos</div>
+              <div class="card-option font-card-option">
+                Meu Histórico de Atendimentos
+              </div>
             </div>
             <div class="col-md-4">
-              <div class="card-option">Consulta Portabilidade</div>
+              <div class="card-option font-card-option">
+                Consulta Portabilidade
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Coluna da direita -->
         <div class="col-lg-4">
-          <h5 class="mb-4">Comunicados</h5>
+          <h5 class="mb-4 font-comunicados">Comunicados</h5>
 
           <div class="accordion" id="comunicadosAccordion">
             <div class="accordion-item border-start-important">
@@ -326,7 +262,7 @@
 
     <!-- Rodapé -->
     <footer>
-      <p>
+      <p class="font-footer">
         Baixe agora mesmo o Aplicativo<br />Now Mobile para acessar o MarTIM
       </p>
       <div class="app-icons mt-2">
