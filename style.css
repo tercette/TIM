@@ -4,10 +4,12 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: #F0F1F2;
 }
 
 body {
   font-family: 'TIM Sans', sans-serif;
+  color: #003263;
 }
 
 .font-tim {
@@ -23,9 +25,13 @@ body {
 }
 
 .font-usuario {
+  font-family: 'TIM Sans', sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 110%;
+  letter-spacing: -0.02em;
+  vertical-align: middle;
+  color: #003263;
 }
 
 .font-tours {
@@ -263,6 +269,39 @@ footer {
 .user-dropdown:hover .user-summary,
 .user-dropdown:focus-within .user-summary {
   background-color: #0072ce;
+}
+
+.card-option {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ← ícone alinhado à esquerda */
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.card-option img.card-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.card-option:hover {
+  border-color: #0064af;
+  background-color: #003263;
+  color: white;
+}
+
+.card-option:hover img.card-icon {
+  filter: brightness(0) invert(1); /* deixa o ícone branco no hover */
 }
 
 @font-face {
