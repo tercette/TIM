@@ -115,14 +115,18 @@
       </div>
 
       <!-- Saudação e campo de busca -->
-      <div class="container ">
+      <div class="container">
         <div
-          class="d-flex justify-content-between align-items-center flex-wrap"
+          class="d-flex flex-wrap align-items-center justify-content-between"
+          style="gap: 1rem"
         >
           <!-- Coluna da esquerda -->
-          <div>
+          <div style="flex: 1 1 auto; min-width: 300px">
             <h4 class="mb-2 text-white">Olá Hercules!</h4>
-            <div class="input-group" style="width: 797px; height: 36px">
+            <div
+              class="input-group"
+              style="width: 100%; max-width: 797px; height: 36px"
+            >
               <input
                 type="text"
                 class="form-control"
@@ -147,7 +151,7 @@
           </div>
 
           <!-- Coluna da direita (imagem alinhada) -->
-          <div>
+          <div style="flex-shrink: 0">
             <img
               src="./images/hero-background.png"
               alt="Fundo com pessoa"
