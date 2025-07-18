@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -9,35 +10,30 @@ body {
   font-family: 'TIM Sans', sans-serif;
 }
 
-/* Base TIM font class */
 .font-tim {
   font-family: 'TIM Sans', sans-serif;
   letter-spacing: -0.02em;
   vertical-align: middle;
 }
 
-/* Shared section title style (Solicitações, Comunicados, etc.) */
 .font-section-title {
   font-weight: 400;
   font-size: 24px;
   line-height: 110%;
 }
 
-/* Usuário no topo */
 .font-usuario {
   font-weight: 700;
   font-size: 12px;
   line-height: 110%;
 }
 
-/* Tours no topo */
 .font-tours {
   font-weight: 400;
   font-size: 12px;
   line-height: 110%;
 }
 
-/* Iniciais "HM" */
 .font-iniciais {
   font-weight: 700;
   font-size: 10px;
@@ -45,14 +41,12 @@ body {
   text-align: center;
 }
 
-/* Saudação */
 .font-ola {
   font-weight: 500;
   font-size: 24px;
   line-height: 110%;
 }
 
-/* Cards "Consulta Chamado" etc */
 .font-card {
   font-weight: 400;
   font-size: 16px;
@@ -60,7 +54,6 @@ body {
   letter-spacing: 0px;
 }
 
-/* Rodapé */
 .font-footer {
   font-weight: 500;
   font-size: 18px;
@@ -68,7 +61,6 @@ body {
   text-align: center;
 }
 
-/* Placeholder do input */
 .custom-placeholder::placeholder {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
@@ -78,21 +70,18 @@ body {
   color: #6c757d;
 }
 
-/* Input de busca */
 .search-input {
   height: 36px;
   border-radius: 4px 0 0 4px;
   border: 1px solid #ced4da;
 }
 
-/* Estilo imagem da direita */
 .img-banner {
   width: 375px;
   height: 125px;
   object-fit: contain;
 }
 
-/* Estilos existentes mantidos */
 .card-option {
   background-color: white;
   border-radius: 8px;
@@ -125,7 +114,7 @@ body {
 
 footer {
   background-color: #e8e5dd;
-  padding: 2rem 0; /* Remove padding lateral */
+  padding: 2rem 0;
   font-size: 0.9rem;
 }
 
@@ -190,11 +179,96 @@ footer {
   vertical-align: middle;
 }
 
-/* @font-face definitions (mantidos como estão) */
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'TIM Sans', sans-serif;
+  font-size: 14px;
+}
+
+.user-dropdown * {
+  box-sizing: border-box;
+}
+
+.user-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #003263;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 4px 4px 0 0;
+  min-width: 250px;
+  cursor: pointer;
+  margin-bottom: -1px;
+  transition: background-color 0.2s ease;
+}
+
+.initials {
+  background-color: #005a9c;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 32px;
+  color: white;
+}
+
+.user-name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: calc(100% + 2px);
+  background-color: #0072ce;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 1px solid transparent;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+}
+
+.dropdown-menu a:hover {
+  background-color: #005a9c;
+}
+
+.user-dropdown:hover .dropdown-menu,
+.user-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.user-dropdown:hover .user-summary,
+.user-dropdown:focus-within .user-summary {
+  background-color: #0072ce;
+}
+
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-thin.woff') format('woff'),
-       url('./fonts/timsans-thin.ttf') format('truetype');
+    url('./fonts/timsans-thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
@@ -202,7 +276,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-thinitalic.woff') format('woff'),
-       url('./fonts/timsans-thinitalic.ttf') format('truetype');
+    url('./fonts/timsans-thinitalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
@@ -210,7 +284,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-light.woff') format('woff'),
-       url('./fonts/timsans-light.ttf') format('truetype');
+    url('./fonts/timsans-light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -218,7 +292,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-lightitalic.woff') format('woff'),
-       url('./fonts/timsans-lightitalic.ttf') format('truetype');
+    url('./fonts/timsans-lightitalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
@@ -226,7 +300,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-regular.woff') format('woff'),
-       url('./fonts/timsans-regular.ttf') format('truetype');
+    url('./fonts/timsans-regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -234,7 +308,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-italic.woff') format('woff'),
-       url('./fonts/timsans-italic.ttf') format('truetype');
+    url('./fonts/timsans-italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
@@ -242,7 +316,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-medium.woff') format('woff'),
-       url('./fonts/timsans-medium.ttf') format('truetype');
+    url('./fonts/timsans-medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -250,7 +324,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-mediumitalic.woff') format('woff'),
-       url('./fonts/timsans-mediumitalic.ttf') format('truetype');
+    url('./fonts/timsans-mediumitalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -258,7 +332,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-bold.woff') format('woff'),
-       url('./fonts/timsans-bold.ttf') format('truetype');
+    url('./fonts/timsans-bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -266,7 +340,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-bolditalic.woff') format('woff'),
-       url('./fonts/timsans-bolditalic.ttf') format('truetype');
+    url('./fonts/timsans-bolditalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
@@ -274,7 +348,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-heavy.woff') format('woff'),
-       url('./fonts/timsans-heavy.ttf') format('truetype');
+    url('./fonts/timsans-heavy.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -282,7 +356,7 @@ footer {
 @font-face {
   font-family: 'TIM Sans';
   src: url('./fonts/timsans-heavyitalic.woff') format('woff'),
-       url('./fonts/timsans-heavyitalic.ttf') format('truetype');
+    url('./fonts/timsans-heavyitalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
 }
