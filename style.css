@@ -254,7 +254,7 @@ footer {
   display: none;
   z-index: 10;
   width: max-content;
-  
+
 }
 
 .user-dropdown:hover .user-menu {
@@ -327,19 +327,34 @@ footer {
 }
 
 .comunicado-titulo {
-  font-weight: bold;
-  font-size: 1rem;
+  font-family: "TIM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   margin-bottom: 0.5rem;
 }
 
 .comunicado-texto {
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-family: "TIM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .comunicado-footer {
-  text-align: center;
-  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.comunicado-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
 }
 
 .btn-ocultar {
@@ -356,6 +371,34 @@ footer {
 
 .btn-ocultar:hover {
   background-color: #001f4d;
+}
+
+.btn-ocultar-azul {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: 'TIM Sans', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  padding: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.btn-ocultar-vermelho {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: 'TIM Sans', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  padding: 0;
+  text-transform: none;
+  cursor: pointer;
 }
 
 @font-face {
